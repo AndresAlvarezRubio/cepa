@@ -1,0 +1,159 @@
+/*****                    RESET CSS                  *****/
+html {
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+
+body, ul {
+    padding: 0;
+    margin: 0;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+audio, canvas, iframe, img, svg, video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+a, a:visited {
+    text-decoration: underline;
+}
+
+pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+}
+
+tr, img {
+    page-break-inside: avoid;
+}
+
+p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+    margin: 0;
+}
+
+h2, h3 {
+    page-break-after: avoid;
+}
+
+* {
+    position: relative;
+    outline: none;
+    font-family: monospace sans-serif;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    word-break: break-word;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+}
+
+table {
+    border-spacing: 0
+}
+
+/*****                FIN RESET CSS                  *****/
+
+* {
+    font-family: 'Roboto';
+}
+
+:root {
+    --color-verde: #45BDA4;
+    --color-rojo: #ff0000;
+    --color-verde_oscuro: #2d7366;
+    --color-amarillo: #F9B801;
+    --color-gris: #F2F2F2;
+    --color-gris_oscuro: #787878;
+    --color-negro: #000;
+    --color-blanco: #fff;
+}
+
+body {
+    background-color: var(--color-gris);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: calc(100% - 20px);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+    @media (width >= 768px) {
+        .form.half-form {
+            width: calc(50% - 10px);
+        }
+    }
+    h2 {
+        margin-bottom: 10px;
+    }
+    .form {
+        width: 100%;
+    }
+    input, select {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: 2px solid var(--color-gris);
+        transition-duration: .3s;
+    }
+    input[type="submit"]:hover {
+        background-color: var(--color-gris_oscuro);
+        color: white;
+        cursor: pointer;
+    }
+}

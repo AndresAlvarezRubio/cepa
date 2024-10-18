@@ -10,7 +10,7 @@ $servidor = "localhost";
 $usuario = "root";
 $password = "";
 $puerto = "3306";
-$bbdd = "cepa";
+$bbdd = "cepa2";
 function conectar() {
 
     global $servidor,$usuario,$password,$puerto,$bbdd;
@@ -18,21 +18,21 @@ function conectar() {
 
     if(mysqli_error($conexion)) {
 
-        echo "Error al conectar";
+        //echo "Error al conectar";
 
     } else {
 
-        echo "Conexión realizada correctamente<br>";
+        //echo "Conexión realizada correctamente<br>";
     }
     if (!mysqli_select_db($conexion,$bbdd)) {
 
-        echo "Error al conectar con la BBDD";
+        //echo "Error al conectar con la BBDD";
         exit();
 
     } else {
 
-        echo "Conexión con la BBDD realizada correctamente ";
+        //echo "Conexión con la BBDD realizada correctamente ";
     }
     return $conexion;
 }
-$conexion = conectar();
+//$conexion = conectar();
