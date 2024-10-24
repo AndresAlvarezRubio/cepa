@@ -8,12 +8,14 @@
     <title>Formulario</title>
     <link rel="stylesheet" href="../vista/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="js/formulario1.js"></script>
 </head>
 <body>
 <h1>Formulario de Alta de nuevo Alumno</h1>
+<h2>Datos Personales del Alumno</h2>
 <form action="../controlador/controlador.php" method="post">
     <div class="form half-form">
-        <h2>Datos personales</h2>
+        <h3>Datos personales</h3>
         <label for="nombre">
             <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre">
         </label>
@@ -34,13 +36,14 @@
         </label>
     </div>
     <div class="form half-form">
-        <h2>Datos complementarios</h2>
+        <h3>Datos complementarios</h3>
         <label for="direccion">
             <input type="text" name="direccion" id="direccion" placeholder="Introduce tu Dirección">
         </label>
         <label for="cp">
             <input type="text" name="cp" id="cp" placeholder="Introduce tu código postal">
         </label>
+        <p id="holaquetal"></p>
         <label for="provincia">
             <select name="provincia" id="provincia">
                 <option value="">Introduce tu Provincia</option>
@@ -60,7 +63,7 @@
         </label>
     </div>
     <div class="form ">
-        <h2>Datos de Estudios</h2>
+        <h3>Datos de Estudios</h3>
         <label for="uEstudio">
             <select name="uEstudio" id="uEstudio">
                 <option value="">Introduce tu Nivel de Estudio</option>

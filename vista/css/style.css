@@ -115,9 +115,9 @@ body {
     padding: 20px;
 }
 
-h1 {
+h1,h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 form {
@@ -129,15 +129,15 @@ form {
     padding: 20px;
     background-color: white;
     justify-content: center;
-    margin: auto;
+    margin: 30px auto;
     gap: 20px;
     @media (width >= 768px) {
         .form.half-form {
             width: calc(50% - 10px);
         }
     }
-    h2 {
-        margin-bottom: 10px;
+    h3 {
+        padding: 10px;
     }
     .form {
         width: 100%;
@@ -157,3 +157,34 @@ form {
         cursor: pointer;
     }
 }
+
+/*******************/
+/**INICIO CHECKBOX**/
+/*******************/
+input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+    cursor: pointer
+}
+.checkbox:not(:has(input[type="checkbox"]:checked))~input[type="submit"] {
+    opacity: 50%;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+.checkbox:not(:has(input[type="checkbox"]:checked))~input[type="submit"]:hover {
+    background-color: var(--color-gris);
+    color: initial;
+    opacity: 50%;
+    cursor: not-allowed;
+}
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 15px;
+    width: auto;
+    cursor: pointer;
+}
+/****************/
+/**FIN CHECKBOX**/
+/****************/
