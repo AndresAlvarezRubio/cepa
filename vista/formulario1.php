@@ -1,16 +1,6 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="../vista/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script src="js/formulario1.js"></script>
-</head>
-<body>
+<?php
+include_once("../header.php");
+?>
 <h1>Formulario de Alta de nuevo Alumno</h1>
 <h2>Datos Personales del Alumno</h2>
 <form action="../controlador/controlador.php" method="post">
@@ -43,7 +33,6 @@
         <label for="cp">
             <input type="text" name="cp" id="cp" placeholder="Introduce tu código postal">
         </label>
-        <p id="holaquetal"></p>
         <label for="provincia">
             <select name="provincia" id="provincia">
                 <option value="">Introduce tu Provincia</option>
@@ -88,5 +77,6 @@
     }
     ?>
 </form>
-</body>
-</html>
+<?php
+include_once("../footer.php");
+?>

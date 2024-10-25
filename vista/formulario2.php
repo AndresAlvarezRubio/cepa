@@ -1,15 +1,6 @@
-<!doctype html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="../vista/css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-</head>
-<body>
+<?php
+include_once("../header.php");
+?>
 <h1>Formulario de Alta de nuevo Alumno</h1>
 <h2>Datos Persona Contacto Auxiliar del Alumno</h2>
 <form action="../controlador/controlador.php" method="post">
@@ -48,5 +39,6 @@
     }
     ?>
 </form>
-</body>
-</html>
+<?php
+include_once("../footer.php");
+?>
