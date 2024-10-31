@@ -41,7 +41,7 @@
             <ul>
                 <li><a href="aviso-legal.php">Avíso Legal</a></li>
                 <li><a href="politica-de-privacidad.php">Políticas de Privacidad</a></li>
-                <li><a href="politica-de-cookies.php">Políticas de Cookies</a></li>
+                <li><a href="accesibilidad.php">Políticas de Cookies</a></li>
             </ul>
         </div>
         <div>

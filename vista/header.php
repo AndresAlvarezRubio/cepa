@@ -16,17 +16,7 @@
             <img src="img/Logo%20CEPA.webp" alt="Logo Cepa Simienza">
         </picture>
     </a>
-    <ul>
-        <li><a href="#">Cursos</a></li>
-        <li><a href="#">Certificados</a></li>
-        <li><a href="#">Inicio Sesión</a></li>
-    </ul>
     <div class="boton">
         <a href="https://es.linkedin.com/in/irina-del-valle-medina-sierra?trk=public_profile_samename-profile" target="_blank">Secreto</a>
-    </div>
-    <div class="hamburguer">
-        <span></span>
-        <span></span>
-        <span></span>
     </div>
 </header>

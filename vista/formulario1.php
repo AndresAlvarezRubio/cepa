@@ -1,5 +1,5 @@
 <?php
-include_once("../header.php");
+include_once("header.php");
 ?>
 <h1>Formulario de Alta de nuevo Alumno</h1>
 <h2>Datos Personales del Alumno</h2>
@@ -78,5 +78,5 @@ include_once("../header.php");
     ?>
 </form>
 <?php
-include_once("../footer.php");
+include_once("footer.php");
 ?>

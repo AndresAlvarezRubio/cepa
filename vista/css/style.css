@@ -221,6 +221,9 @@ p.error {
 /** INICIO HEADER **/
 /*******************/
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: calc(100% - 40px);
     max-width: 1200px;
     margin: 0px auto 50px;
@@ -228,14 +231,20 @@ header {
     background-color: white;
     border-radius: 0 0 20px 20px;
     @media (min-width: 768px) {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        gap: 20px;
     }
-
-    .hamburguer {
+    .container-hamburguer {
         @media (min-width: 768px) {
-            display: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .boton {
+
+            a {
+                padding: 10px 40px
+            }
         }
     }
 
@@ -249,7 +258,10 @@ header {
             width: auto;
         }
     }
-
+    a {
+        display: block;
+        width: fit-content;
+    }
     ul {
         display: flex;
         gap: 20px;
@@ -261,6 +273,7 @@ header {
             a {
                 display: flex;
                 align-items: center;
+                width: initial;
                 height: inherit;
                 font-size: 18px;
 
